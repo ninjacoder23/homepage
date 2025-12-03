@@ -1,0 +1,170 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CONTAINER WITH BACKGROUND IMAGE ===== */
+.container {
+  background-image: url('./5hd4bcc0yvxf1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+  gap: 10px;
+  padding: 20px;
+  color: black;
+}
+
+
+/* ===== ABOUT ME SECTION ===== */
+.about_me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(139, 180, 233, 0.85); /* slight transparency looks nicer */
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.photome {
+  background: black;
+  height: 240px;
+  width: 180px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+
+/* ===== PROJECT / WORK SECTION ===== */
+.my_work {
+  background: rgba(65, 57, 57, 0.8);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.box {
+  background: rgb(40, 53, 231);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.downhalf {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background:rgba(146, 162, 184, 0.85);;
+  padding: 30px;
+  border-radius: 8px;
+  align-items: center;
+  gap: 20px;
+}
+
+.info {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.photo {
+  background: rgb(0, 0, 0);
+  height: 200px;
+  width: 300px;
+  border-radius: 12px;
+  justify-self: end;
+}
+/* ===== IMAGE STYLING (Modern Portfolio Look) ===== */
+
+/* ABOUT ME Photo */
+.photome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.photome img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.55);
+}
+
+/* CONTACT ME Photo */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.55);
+}
+
+/* Social Icons */
+.icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform .3s ease;
+  margin: 5px;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,.4));
+}
+/* ICON BUTTONS */
+.icons i {
+  font-size: 32px;
+  margin: 8px;
+  cursor: pointer;
+  transition: .3s;
+  color: #000;
+}
+
+.icons i:hover {
+  transform: scale(1.25);
+  color: rgb(46, 78, 255);
+  text-shadow: 0px 3px 8px rgba(0,0,0,.4);
+}
+.uphalf {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.uphalf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s;
+}
+
+/* Hover zoom effect */
+.uphalf img:hover {
+  transform: scale(1.1);
+}
